@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <nav>
-        <Link to="/">Presentation</Link>
+        <Link to="/">Présentation</Link>
         <Link to="/curiculum">Curiculum Vitae</Link>
         <Link to="/projects">Projets</Link>
         <Link to="/contact">Contact</Link>
