@@ -1,7 +1,7 @@
 import React from "react";
 
 function Curiculum(props) {
-  return <div></div>;
+  return <div>CV</div>;
 }
 
 export default Curiculum;

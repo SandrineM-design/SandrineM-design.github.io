@@ -1,14 +1,28 @@
-import React from 'react';
-
-function Navbar(props) {
-    return (
-        <ul>
-          <li>Présentation</li>
-          <li>Curiculum Vitae</li>
-          <li>Projets</li>
-          <li>Contact</li>  
-        </ul>
-    );
+function Navbar() {
+  return (
+    <ul className="flex">
+      <li className="mr-6">
+        <a className="text-green-600 hover:text-green-800" href="/">
+          Présentation
+        </a>
+      </li>
+      <li className="mr-6">
+        <a className="text-green-600 hover:text-green-800" href="/curiculum">
+          Curiculum Vitae
+        </a>
+      </li>
+      <li className="mr-6">
+        <a className="text-green-600 hover:text-green-800" href="/projects">
+          Projets
+        </a>
+      </li>
+      <li className="mr-6">
+        <a className="text-green-600 hover:text-green-800" href="/contact">
+          Contact
+        </a>
+      </li>
+    </ul>
+  );
 }
 
 export default Navbar;
