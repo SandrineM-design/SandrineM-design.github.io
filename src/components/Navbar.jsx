@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <ul className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <ul className="flex">
       <li className="mr-6">
         <a className="font-bold text-green-600 hover:text-green-800" href="/">
           Présentation
