@@ -4,12 +4,12 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Navbar />
-      <main>
+      <main className="flex flex-col flex-1 items-stretch">
         <Outlet />
       </main>
-    </>
+    </div>
   );
 }
 
