@@ -8,7 +8,7 @@ function Curiculum(props) {
         Développeuse web et web mobile React JS
       </h2>
       <p className="mt-5 vhitespace-norma bg-yellow-50l">
-        Durand ma formation bootcamp à la Wild Code School j'ai travaillé sur
+        Durant ma formation bootcamp à la Wild Code School j'ai travaillé sur
         divers projets : <br />
         <ul className="list-disc">
           <li>
