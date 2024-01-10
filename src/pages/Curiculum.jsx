@@ -1,4 +1,5 @@
 import React from "react";
+import photo from "../assets/capture_ToDO_List.jpg";
 
 function Curiculum(props) {
   return (
@@ -8,15 +9,15 @@ function Curiculum(props) {
         Développeuse web et web mobile React JS
       </h2>
       <p className="mt-5 vhitespace-norma bg-yellow-50l">
-        Durant ma formation bootcamp à la Wild Code School j'ai travaillé sur
+        Durant ma formation bootcamp à la Wild Code School j`ai travaillé sur
         divers projets : <br />
         <ul className="list-disc">
           <li>
-            développement d'une ToDo List en Javascript Vanilla et CSS (projet
+            développement d`une ToDo List en Javascript Vanilla et CSS (projet
             de groupe)
           </li>
           <li>
-            développement de la partie front-end d'un clone d'Allo Ciné en React
+            développement de la partie front-end d`un clone d`Allo Ciné en React
             JS et Sass (projet de groupe)
           </li>
           <li>
@@ -29,6 +30,7 @@ function Curiculum(props) {
         </ul>
       </p>
       <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Mes projets</h2>
+      <img className="mt-10 w-36  bg-yellow-50" src={photo}></img>
     </div>
   );
 }
