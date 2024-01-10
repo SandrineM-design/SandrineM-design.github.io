@@ -1,5 +1,6 @@
 import React from "react";
 import photo from "../assets/Sandrine.jpg";
+import Curiculum from "../pages/Curiculum";
 
 function Presentation() {
   return (
@@ -16,10 +17,10 @@ function Presentation() {
         Développeuse web et web mobile
       </h2>
       <p className="mt-5 vhitespace-norma bg-yellow-50l">
-        Déterminée et curieuse, je suis à la recherche d'un contrat de <br />
-        professionnalisation en alternance pour enrichir mes <br />
-        connaissances et perfectionner mes compétences.
+        Bienvenue sur mon portfolio, fenêtre ouverte sur mes projets dev. <br />
+        Vous y trouverez tous mes projets, personnels ou de formation. <br />
       </p>
+      <Curiculum />
     </div>
   );
 }
