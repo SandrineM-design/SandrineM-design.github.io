@@ -3,6 +3,7 @@ import Curiculum from "../pages/Curiculum";
 import Projects from "./Projects";
 import Hobbies from "./Hobbies";
 import Skills from "./Skills";
+import Contact from "../pages/Contact";
 
 function Presentation() {
   return (
@@ -26,6 +27,7 @@ function Presentation() {
       <Projects />
       <Skills />
       <Hobbies />
+      <Contact />
     </div>
   );
 }
