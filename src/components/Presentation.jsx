@@ -1,6 +1,6 @@
-import React from "react";
 import photo from "../assets/Sandrine.jpg";
 import Curiculum from "../pages/Curiculum";
+import Projects from "./Projects";
 
 function Presentation() {
   return (
@@ -21,6 +21,7 @@ function Presentation() {
         Vous y trouverez tous mes projets, personnels ou de formation. <br />
       </p>
       <Curiculum />
+      <Projects />
     </div>
   );
 }
