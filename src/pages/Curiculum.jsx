@@ -1,6 +1,3 @@
-import photo from "../assets/capture_ToDO_List.jpg";
-import photo2 from "../assets/Juracine.jpg";
-
 function Curiculum() {
   return (
     <div className="flex flex-col flex-1 place-items-center bg-yellow-50">
