@@ -1,6 +1,8 @@
 import photo from "../assets/Sandrine.jpg";
 import Curiculum from "../pages/Curiculum";
 import Projects from "./Projects";
+import Hobbies from "./Hobbies";
+import Skills from "./Skills";
 
 function Presentation() {
   return (
@@ -22,6 +24,8 @@ function Presentation() {
       </p>
       <Curiculum />
       <Projects />
+      <Skills />
+      <Hobbies />
     </div>
   );
 }
