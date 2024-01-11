@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Hobbies from "./Hobbies";
 import Skills from "./Skills";
 import Contact from "../pages/Contact";
+import Education from "./Education";
 
 function Presentation() {
   return (
@@ -23,6 +24,7 @@ function Presentation() {
         Bienvenue sur mon portfolio, fenêtre ouverte sur mes projets dev. <br />
         Vous y trouverez tous mes projets, personnels ou de formation. <br />
       </p>
+      <Education />
       <Curiculum />
       <Projects />
       <Skills />
