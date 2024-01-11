@@ -3,7 +3,7 @@ import React from "react";
 function Education(props) {
   return (
     <div>
-      <h1>Formations</h1>
+      <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Mes formations</h2>
       <ul>
         <li>
           Bootcamp Développeur Web et Web Mobile <br />
