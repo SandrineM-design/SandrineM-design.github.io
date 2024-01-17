@@ -1,7 +1,7 @@
 function Curiculum() {
   return (
     <div className="flex flex-col flex-1 place-items-center bg-yellow-50">
-      <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Curriculum</h2>
+      <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Expériences</h2>
       <p className="mt-5 vhitespace-norma bg-yellow-50l">
         Durant ma formation bootcamp à la Wild Code School j`ai travaillé sur
         divers projets : <br />
