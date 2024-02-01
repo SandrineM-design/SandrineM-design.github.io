@@ -31,13 +31,25 @@ function Projects() {
   ];
 
   return (
-    <div>
+    <div className="flex flex-col flex-1 place-items-center bg-yellow-50">
       <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Mes projets</h2>
       <ul>
         {projects.map((project, index) => (
           <li key={index}>
-            {project.name} {project.image} {project.description} {project.link}{" "}
-            {project.repository}
+            <h3 className="mt-2.5 font-bold text-1x1  bg-yellow-50">
+              {project.name}
+            </h3>
+            <img
+              className="rounded-lg relative h-auto max-w-xs items-center"
+              src={project.image}
+            />
+            <span className="flex items-center mb-1">
+              {project.description}
+            </span>
+            <a href="#" className="flex items-center mb-1">
+              {project.link}
+            </a>
+            <a href="#">{project.repository}</a>
           </li>
         ))}
       </ul>
