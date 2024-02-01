@@ -1,62 +1,66 @@
 function Skills() {
-  const languages = [
-    {
-      name1: "HTML 5",
-      name2: "CSS3",
-      name3: "Javascript Vanilla",
-    },
-  ];
+  const languages = ["HTML5", "CSS3", "Javascript Vanilla"];
 
   const framworksLibraries = [
-    {
-      name1: "React JS",
-      name2: "Express JS",
-      name3: "Node JS",
-      name4: "Vite",
-      name5: "VueJS",
-      name6: "Sass",
-      name7: "TailwindCSS",
-      name8: "NPM",
-      name9: "JEST",
-      name10: "Postman",
-    },
+    "React JS",
+    "Express JS",
+    "Node JS",
+    "Vite",
+    "VueJS",
+    "Sass",
+    "TailwindCSS",
+    "NPM",
+    "JEST",
+    "Postman",
   ];
 
-  const databases = [
-    {
-      name1: "MySQL",
-      name2: "SQLite",
-      name3: "MongoDB",
-    },
-  ];
+  const databases = ["MySQL", "SQLite", "MongoDB"];
 
-  const design = [
-    {
-      name1: "Figma",
-      name2: "Canva",
-    },
-  ];
+  const design = ["Figma", "Canva"];
 
   const tools = [
-    {
-      name1: "Git",
-      name2: "GitHub",
-      name3: "VSCode",
-      name4: "Microsoft Office",
-      name5: "EsLint",
-      name6: "Prettier",
-      name7: "Trello",
-    },
+    "Git",
+    "GitHub",
+    "VSCode",
+    "Microsoft Office",
+    "EsLint",
+    "Prettier",
+    "Trello",
   ];
 
   return (
     <div>
       <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Hard skills</h2>
       <h3>Langages de programmation :</h3>
+      <ul>
+        {languages.map((language, index) => (
+          <li key={index}>{language}</li>
+        ))}
+      </ul>
       <h3>Frameworks & bibliothèques :</h3>
+      <ul>
+        {framworksLibraries.map((framworksLib, index) => (
+          <li key={index}>{framworksLib}</li>
+        ))}
+      </ul>
       <h3>Bases de données :</h3>
+      <ul>
+        {databases.map((database, index) => (
+          <li key={index}>{database}</li>
+        ))}
+      </ul>
       <h3>Design :</h3>
+      <ul>
+        {design.map((design, index) => (
+          <li key={index}>{design}</li>
+        ))}
+      </ul>
       <h3>Outils :</h3>
+      <ul>
+        {tools.map((tool, index) => (
+          <li key={index}>{tool}</li>
+        ))}
+      </ul>
     </div>
   );
 }
