@@ -1,6 +1,4 @@
-import React from "react";
-
-function Education(props) {
+function Education() {
   const formations = [
     {
       name: "Bootcamp Développeur Web et Web Mobile",
@@ -18,9 +16,17 @@ function Education(props) {
       date: "juin 2005",
     },
   ];
+
   return (
     <div>
       <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Mes formations</h2>
+      <ul>
+        {formations.map((formation, index) => (
+          <li key={index}>
+            {formation.name} {formation.school} {formation.date}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
