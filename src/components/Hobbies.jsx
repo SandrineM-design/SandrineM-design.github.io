@@ -1,6 +1,6 @@
 function Hobbies() {
   return (
-    <div>
+    <div className="flex flex-col flex-1 place-items-center bg-yellow-50">
       <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Mes passe-temps</h2>
       Sur mon temps libre, je suis Sapeure Pompier Volontaire au centre de
       secours de <br />
