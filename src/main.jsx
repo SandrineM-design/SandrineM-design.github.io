@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Presentation from "./components/Presentation.jsx";
+import Skills from "./components/Skills.jsx";
 import Curiculum from "./pages/Curiculum.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Presentation />,
+      },
+      {
+        path: "/skills",
+        element: <Skills />,
       },
       {
         path: "/curiculum",
