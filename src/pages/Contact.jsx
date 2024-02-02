@@ -3,8 +3,8 @@ import github from "../assets/github.svg";
 
 function Contact() {
   return (
-    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md flex flex-col flex-1 place-items-stretch bg-yellow-50">
-      <h2 className="flex flex-col flex-1 place-items-center bg-yellow-50 mt-10 font-bold text-2xl bg-yellow-50">
+    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md flex flex-col flex-1 place-items-stretch">
+      <h2 className="flex flex-col flex-1 place-items-center mt-10 font-bold text-2xl">
         Contact
       </h2>
       <p className="mt-5 mb-6 vhitespace-norma bg-yellow-50l">
