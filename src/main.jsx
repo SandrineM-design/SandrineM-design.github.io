@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Presentation from "./components/Presentation.jsx";
 import Skills from "./components/Skills.jsx";
-import Curiculum from "./pages/Curiculum.jsx";
+import Education from "./components/Education.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import App from "./App.jsx";
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <Skills />,
       },
       {
-        path: "/curiculum",
-        element: <Curiculum />,
+        path: "/education",
+        element: <Education />,
       },
       {
         path: "/projects",
