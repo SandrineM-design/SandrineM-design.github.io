@@ -23,9 +23,9 @@ function Navbar() {
       <li className="mr-6 mt-5">
         <a
           className="font-bold text-emerald-600 hover:text-emerald-800"
-          href="/curiculum"
+          href="/education"
         >
-          Expériences
+          Parcours
         </a>
       </li>
       <li className="mr-6 mt-5">
