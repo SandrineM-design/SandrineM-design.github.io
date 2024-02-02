@@ -1,4 +1,4 @@
-import photo from "../assets/Sandrine.jpg";
+import photo from "../assets/Photo-sandrine.jpg";
 
 function Presentation() {
   return (
@@ -11,9 +11,10 @@ function Presentation() {
         Développeuse web et web mobile junior
       </h2>
       <p className="mt-5 mb-5 vhitespace-normal text-center ">
-        Après 20 ans à travailler auprès des enfants et des familles, <br />
+        Après 20 ans passés à travailler auprès des enfants et des familles,{" "}
+        <br />
         j'ai décidé de changer radicalement de voie et de me reconvertir <br />
-        dans le développement informatique.
+        dans le développement web.
       </p>
       <p className="mt-5 mb-5 vhitespace-normal text-center ">
         En tant que développeuse web junior, j'ai à coeur de continuer à
