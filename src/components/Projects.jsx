@@ -7,52 +7,50 @@ function Projects() {
     {
       name: "ToDo List",
       image: ToDoList,
-      description: "Technos utilisées : Javascript, CSS",
-      link: "https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-jurascripts-P1-4Fantascripts",
-      repository:
-        "https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-jurascripts-P1-4Fantascripts",
+      description: "Réalisé avec Javascript et CSS",
+      link: "https://wildcodeschool-2023-09.github.io/JS-RemoteFR-jurascripts-P1-4Fantascripts/",
     },
     {
       name: "Juraciné",
       image: Juracine,
-      description: "Technos utilisées : React JS et Sass",
-      link: "https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-jurascripts-P2-Jurastream",
-      repository:
-        "https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-jurascripts-P2-Jurastream",
+      description: "Réalisé avec React JS et Sass",
+      link: "https://jurastream.vercel.app/",
     },
     {
       name: "Origin's Digital",
       image: Originsdigital,
-      description: "Technos utilisées: NodeJS, MySQL, ReactJS, Sass",
+      description: "Réalisé avec NodeJS, MySQL, ReactJS, Sass",
       link: "https://origins.remote-6.wilders.dev/",
-      repository:
-        "https://github.com/WildCodeSchool-2023-09/JS-RemoteFR-jurascripts-P3-Originsdigital",
     },
   ];
 
   return (
-    <div className="flex flex-col flex-1 place-items-center bg-yellow-50">
-      <h2 className="mt-10 font-bold text-2xl bg-yellow-50">Mes projets</h2>
-      <ul>
-        {projects.map((project, index) => (
-          <li key={index}>
-            <h3 className="mt-2.5 font-bold text-1x1  bg-yellow-50">
-              {project.name}
-            </h3>
-            <img
-              className="rounded-lg relative h-auto max-w-xs items-center"
-              src={project.image}
-            />
-            <span className="flex items-center mb-1">
-              {project.description}
-            </span>
-            <a href="#" className="flex items-center mb-1">
-              {project.link}
-            </a>
-            <a href="#">{project.repository}</a>
-          </li>
-        ))}
-      </ul>
+    <div className="flex flex-col flex-1 place-items-center">
+      <h2 className="mt-3 mb-20 font-bold text-2xl text-emerald-600">
+        Mes projets
+      </h2>
+      <div>
+        <ul className="flex flex-wrap justify-stretch">
+          {projects.map((project, index) => (
+            <li key={index}>
+              <img
+                className="rounded-lg relative h-auto max-w-xs"
+                src={project.image}
+              />
+              <h3 className="mt-2.5 font-bold text-1x1 text-emerald-400">
+                {project.name}
+              </h3>
+              <span className="flex mb-1">{project.description}</span>
+              <a
+                href="#"
+                className="flex items-center mb-1 text-blue-500 underline"
+              >
+                {project.link}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
