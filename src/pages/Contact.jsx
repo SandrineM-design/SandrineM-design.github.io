@@ -3,34 +3,24 @@ import github from "../assets/github.svg";
 
 function Contact() {
   return (
-    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md flex flex-col flex-1 place-items-stretch">
-      <h2 className="flex flex-col flex-1 place-items-center mt-10 font-bold text-2xl">
+    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md place-items-stretch">
+      <h2 className="flex flex-col flex-1 place-items-center font-bold text-2xl text-emerald-600">
         Contact
       </h2>
       <p className="mt-5 mb-6 vhitespace-norma bg-yellow-50l">
-        Une question, une proposition d'emploi ou vous souhaitez simplement
-        faire connaissance ? Envoyez-moi un message ou contactez-moi sur les
-        réseaux !
+        Une question, une proposition de collaboration ou simplement envie de
+        faire connaissance ? <br />
+        Envoyez-moi un message ou contactez-moi sur les réseaux !
       </p>
       <form className="grid justify-self-stretch">
-        <div className="grid grid-flow-colmun-dense grid-rows-3 gap-3">
+        <div className="grid grid-flow-colmun-dense grid-rows-2">
           <div>
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Votre prénom
+              Vos nom et prénom
             </label>
             <input
               type="text"
-              id="first_name"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            />
-          </div>
-          <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Votre nom
-            </label>
-            <input
-              type="text"
-              id="last_name"
+              id="name"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             />
           </div>
