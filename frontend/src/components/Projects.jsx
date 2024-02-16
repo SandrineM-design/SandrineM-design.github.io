@@ -42,10 +42,12 @@ function Projects() {
               </h3>
               <span className="flex mb-1">{project.description}</span>
               <a
-                href="#"
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center mb-1 text-blue-500 underline"
               >
-                {project.link}
+                Lien
               </a>
             </li>
           ))}
