@@ -1,39 +1,47 @@
 CREATE TABLE `formation` (
-  `id` int,
-  `name` varchar(255),
-  `school` varchar(255)
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `school` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `experiences` (
-  `id` int,
-  `name` varchar(255),
-  `place` varchar(255)
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `place` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `projects` (
-  `id` int,
-  `title` varchar(255),
-  `img` varchar(255),
-  `description` varchar(255),
-  `link` varchar(255),
-  `github` varchar(255)
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(255) NOT NULL,
+  `img` VARCHAR(255) NOT NULL,
+  `description` VARCHAR(255) NOT NULL,
+  `link` VARCHAR(255) NOT NULL,
+  `github` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `skills` (
-  `id` int,
-  `name` varchar(255),
-  `img` varchar(255),
-  `id_type` int
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `img` VARCHAR(255) NOT NULL,
+  `id_type` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`id_type`) REFERENCES type(id)
 );
 
 CREATE TABLE `type` (
-  `id` int,
-  `name` varchar(255)
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `experiences_skills` (
-  `id_experience` int,
-  `id_skill` int
+  `id_experience` INT NOT NULL,
+  `id_skill` INT NOT NULL,
+  FOREIGN KEY (`id_experience`) REFERENCES experience(id),
+  FOREIGN KEY (`id_skill`) REFERENCES skill(id)
 );
 
 CREATE TABLE `projects_skills` (
